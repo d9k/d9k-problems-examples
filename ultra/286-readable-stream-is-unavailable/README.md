@@ -2,8 +2,6 @@
 
 - https://github.com/exhibitionist-digital/ultra/issues/286
 
-Created with `deno run -A -r https://deno.land/x/ultra/create.ts`
-
 ## Error reproduction
 
 Run
@@ -26,8 +24,23 @@ error: Uncaught TypeError: Readable stream is unavailable.
     at eventLoopTick (ext:core/01_core.js:184:21)
 ```
 
-## Generator answers
+## Breaking code changes
 
+`server.get("*", async (context) => {` at [./server.tsx](./server.tsx).
+
+```ts
+// Breaking change BEGIN
+await new Promise((resolve) => setTimeout(resolve, 300));
+// END breaking change
+```
+
+## Generated with
+
+`deno run -A -r https://deno.land/x/ultra/create.ts`
+
+### Generator answers
+
+```
 Do you want to use TypeScript? [y/n] y
 
 Which css/style library do you want to use?
@@ -41,3 +54,4 @@ Which head management library do you want to use?
 
 Which query library do you want to use?
 (0) None (1) React Query 1
+```
