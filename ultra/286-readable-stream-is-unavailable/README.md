@@ -4,6 +4,28 @@
 
 Created with `deno run -A -r https://deno.land/x/ultra/create.ts`
 
+## Error reproduction
+
+Run
+
+```
+deno task dev
+```
+
+Press `[F5]` rapidly 5+ times in browser. The server will crash with error:
+
+```
+error: Uncaught TypeError: Readable stream is unavailable.
+          controller.enqueue(encodeText(bufferedString));
+                     ^
+    at transformStreamDefaultControllerEnqueue (ext:deno_web/06_streams.js:4006:11)
+    at TransformStreamDefaultController.enqueue (ext:deno_web/06_streams.js:6247:5)
+    at https://deno.land/x/ultra@v2.3.8/lib/stream.ts:54:22
+    at Object.action (ext:deno_web/02_timers.js:150:11)
+    at handleTimerMacrotask (ext:deno_web/02_timers.js:64:10)
+    at eventLoopTick (ext:core/01_core.js:184:21)
+```
+
 ## Generator answers
 
 Do you want to use TypeScript? [y/n] y

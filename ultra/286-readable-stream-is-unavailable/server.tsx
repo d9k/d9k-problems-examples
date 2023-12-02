@@ -52,6 +52,10 @@ function ServerApp({ context }: { context: Context }) {
 }
 
 server.get("*", async (context) => {
+  // Breaking change BEGIN
+  await new Promise((resolve) => setTimeout(resolve, 300));
+  // END breaking change
+
   // clear query cache
   queryClient.clear();
 
