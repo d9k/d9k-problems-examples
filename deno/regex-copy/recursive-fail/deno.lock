@@ -1,0 +1,7 @@
+{
+  "version": "3",
+  "remote": {
+    "https://deno.land/x/regex_copy@1.0.3/deno/src/deno.ts": "841db243e90dd129558162a013c0e5e46ab89d2abf6140218c30e76da3868e7a",
+    "https://deno.land/x/regex_copy@1.0.3/mod.ts": "5ddd4eccf4111fa1754262f7be0ca5b9857266a0b4b812268060557f1dbfcdce"
+  }
+}
