@@ -1,8 +1,20 @@
 # 291 react-router nested path routes
 
-Not reproduced, works fine.
-
 - https://github.com/exhibitionist-digital/ultra/issues/291
+
+```bash
+deno task build
+cd .ultra
+deno task start
+```
+
+Navigate to http://localhost:8000/nested/demo
+
+Open DevTools (F12), Console tab, there are errors like:
+
+```
+app.tsx:1 Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec.
+```
 
 ## Created with
 
