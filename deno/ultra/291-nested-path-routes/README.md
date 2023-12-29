@@ -1,6 +1,8 @@
-# 286 readable stream is unavailable
+# 291 react-router nested path routes
 
 Not reproduced, works fine.
+
+- https://github.com/exhibitionist-digital/ultra/issues/291
 
 ## Created with
 
