@@ -16,6 +16,9 @@ Open DevTools (F12), Console tab, there are errors like:
 app.tsx:1 Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec.
 ```
 
+Note that there are no errors on demo page with plain route
+http://localhost:8000/demo.
+
 ## Created with
 
 ```bash
