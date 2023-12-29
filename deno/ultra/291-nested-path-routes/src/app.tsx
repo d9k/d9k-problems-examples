@@ -41,7 +41,7 @@ export default function App() {
             element={<PageDemo />}
           />
           <Route
-            path='/nested/demo'
+            path='/nested/:name'
             element={<PageNestedDemo />}
           />
         </Routes>
